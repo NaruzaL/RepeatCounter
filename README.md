@@ -16,8 +16,8 @@ RepeatCounter asks the user to enter a sentence and then a word to be found in t
 
 |Behavior|User Input|Expected Output|
 |---------|----------|-----------|
-|User enters a _sentence_ and a **word** to be found in that sentence|"_All in all is all we are_", "**all**"|Number of times "all" appears in "All in all is all we are"|
-|The user's selected word is found in their sentence and for each instance of the word the **count** is increased by one|"All in all is all we are", "all"|"Your word is used **3** times in your sentence"|
+|User enters a _sentence_ and a **word** to be found in that sentence. The sentece is split into single words|"_All in all is all we are_", "**all**"| _"All" "in" "all" "is" "all" "we" "are"_|
+|The user's selected word is found in their sentence and for each instance of the word the **count** is increased by one|"**All** in **all** is **all** we are", "**all**"|"Your word is used **3** times in your sentence"|
 
 ## Setup/Installation Requirements
 
@@ -30,7 +30,8 @@ RepeatCounter asks the user to enter a sentence and then a word to be found in t
 
 ## Known Bugs
 
-If the sentence entered by the user contains punctuation the program will fail to find the chosen word in the sentence. A method to remove punctuation is needed.
+When characters other than common punctuation are entered the program will fail to find the specified word. Adding certain symbols into userSentence.Split() at ../RepeatCounter/RepeatCounter.cs line 11 will throw exceptions when running "dnx kestrel".
+
 
 ## Support and contact details
 
