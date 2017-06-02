@@ -8,14 +8,15 @@ namespace RepeatCounterProject.Objects
     public string CountRepeats(string userSentence, string wordToFind)
     {
       int counter = 0;
-      if (userSentence.Contains(wordToFind))
+      string[] words = userSentence.Split(' ');
+      foreach (string word in words)
+      if (word == wordToFind)
       {
+        Console.WriteLine(word);
         counter += 1;
       }
-      else
-      {
-        return "word not found";
-      }
+
+      Console.WriteLine(counter);
       return counter.ToString();
     }
   }
