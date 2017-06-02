@@ -10,7 +10,7 @@ namespace RepeatCounterProject.Objects
       int counter = 0;
       string[] words = userSentence.Split(' ');
       foreach (string word in words)
-      if (word == wordToFind)
+      if (word.ToLower() == wordToFind.ToLower())
       {
         counter += 1;
       }

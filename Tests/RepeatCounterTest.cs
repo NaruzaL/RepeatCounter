@@ -8,7 +8,7 @@ namespace RepeatCounterTest
   public class ReapeatCounterTest
   {
     [Fact]
-    public void FindUserChosenWordInUseerSenetence_True()
+    public void FindUserChosenWordInUserSentence_True()
     {
       RepeatCounter newInstance = new RepeatCounter();
       Assert.Equal("1", newInstance.CountRepeats("is", "is"));
