@@ -8,7 +8,7 @@ namespace RepeatCounterProject.Objects
     public string CountRepeats(string userSentence, string wordToFind)
     {
       int counter = 0;
-      string[] words = userSentence.Split(' ');
+      string[] words = userSentence.Split(' ', ',', '.', '!', '?', ':', '"');
       foreach (string word in words)
       if (word.ToLower() == wordToFind.ToLower())
       {
