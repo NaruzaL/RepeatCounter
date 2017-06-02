@@ -19,5 +19,11 @@ namespace RepeatCounterTest
       RepeatCounter newInstance = new RepeatCounter();
       Assert.Equal("1", newInstance.CountRepeats("This is a sentence", "is"));
     }
+    [Fact]
+    public void CountEachRepeatOfChosenWord_ReturnCounter()
+    {
+      RepeatCounter newInstance = new RepeatCounter();
+      Assert.Equal("3", newInstance.CountRepeats("all in all is all we are", "all"))
+    }
   }
 }
