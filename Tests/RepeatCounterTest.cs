@@ -11,13 +11,13 @@ namespace RepeatCounterTest
     public void FindUserChosenWordInUseerSenetence_True()
     {
       RepeatCounter newInstance = new RepeatCounter();
-      Assert.Equal(1, newInstance.CountRepeats("This is a sentence", "is"));
+      Assert.Equal("1", newInstance.CountRepeats("This is a sentence", "is"));
     }
     [Fact]
     public void CountFirstInstanceOfChosenWord_1()
     {
       RepeatCounter newInstance = new RepeatCounter();
-      Assert.Equal(1, newInstance.CountRepeats("This is a sentence", "is"));
+      Assert.Equal("1", newInstance.CountRepeats("This is a sentence", "is"));
     }
   }
 }

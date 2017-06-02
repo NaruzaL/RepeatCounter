@@ -7,15 +7,16 @@ namespace RepeatCounterProject.Objects
   {
     public string CountRepeats(string userSentence, string wordToFind)
     {
-      
+      int counter = 0;
       if (userSentence.Contains(wordToFind))
       {
-        return "true";
+        counter += 1;
       }
       else
       {
         return "word not found";
       }
+      return counter.ToString();
     }
   }
 }
