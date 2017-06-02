@@ -7,6 +7,7 @@ namespace RepeatCounterProject.Objects
   {
     public string CountRepeats(string userSentence, string wordToFind)
     {
+      
       if (userSentence.Contains(wordToFind))
       {
         return "true";
