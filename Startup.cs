@@ -6,7 +6,7 @@ using Nancy.ViewEngines.Razor;
 using System.Collections.Generic;
 
 
-namespace RepeatCounter
+namespace RepeatCounterProject
 {
   public class Startup
   {
