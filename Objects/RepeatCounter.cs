@@ -12,11 +12,8 @@ namespace RepeatCounterProject.Objects
       foreach (string word in words)
       if (word == wordToFind)
       {
-        Console.WriteLine(word);
         counter += 1;
       }
-
-      Console.WriteLine(counter);
       return counter.ToString();
     }
   }
